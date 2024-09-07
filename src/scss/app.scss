@@ -1,0 +1,67 @@
+:root {
+
+    --font-size: 16px;
+    --primary-color: #4CCD99;
+    --secondary-color: #5755FE;
+    --bg-color: #161616;
+    --bg-color-100: #242424;
+    --text-color: #FEFEFE;
+ 
+    @media only screen and (max-width:1500px){
+        --font-size: 14px;
+    }
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    color: var(--text-color);
+    font-weight: normal;
+    line-height: 1.75;
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+    color-scheme: dark;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &::-webkit-scrollbar {
+    width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: var(--bg-color);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--bg-color-100);
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgb(41, 41, 41);
+    }
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
