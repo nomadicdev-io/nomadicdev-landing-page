@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@lottiefiles/dotlottie-web": "^0.33.0",
-    "sass": "^1.78.0"
+    "sass": "^1.78.0",
+    "vitepress-plugin-og-image": "^0.1.1"
   }
 }
