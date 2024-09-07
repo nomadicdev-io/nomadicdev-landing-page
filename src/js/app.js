@@ -4,7 +4,7 @@ import { DotLottie } from '@lottiefiles/dotlottie-web';
 
 const dotLottie = new DotLottie({
   canvas: document.querySelector('#logo_anim'),
-  src: '/src/json/nomadic-logo-animation.json',
+  src: './src/json/nomadic-logo-animation.json',
 });
 
 
