@@ -10,10 +10,32 @@
     <meta property="og:description" content="A tech-savvy individual who thrives in coding environments while embracing the wanderlust of a nomadic lifestyle. Seeking inspiration and adventure in every destination visited." />
     <meta property="og:image" content="./src/scss/app.scss" />
     <link href="./src/scss/app.scss" rel="stylesheet" />
+
+    <style>
+      .loader_ {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+        overflow: hidden;
+        background-color: #161616;
+        z-index: 999;
+        transition: all 0.6s ease;
+        opacity: 1;
+      }
+
+      .dom_loaded .loader_ {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+
   </head>
   <body>
+    <div class="loader_" id="loader"></div>
     <main>
-
+        <canvas id="logo_anim" />
     </main>
     <script type="module" src="./src/js/app.js"></script>
   </body>
